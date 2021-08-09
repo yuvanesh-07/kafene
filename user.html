@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <title>Kafene</title>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./login.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+        <script src="./user.js"></script>
+      </head>
+    <body>
+        <header id="top-bar">
+            <div id="logo-wrapper">
+                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="kafenelogo"/>
+               <p class="brand-name">kafene</p>
+            </div>
+            <div id="menu-items">
+                <a href="./orders.html">Orders</a>
+                <a href="./products.html">Products</a>
+                <a href="./user.html">Users</a>
+             </div>
+             <a href="./login.html" id="logout-btn">Logout</a>
+ </header>
+ <section>
+     <h1 id="user-title">Users</h1>
+     <form>
+         <input type="search" id="search-input" class="search-bar"placeholder="Search by Name"/>
+         <input type="reset" class="reset-btn" id="reset"value="Reset"/>
+     </form>
+    
+    <div id="user-table">
+     <table>
+        <tr>
+           <th>id</th>
+           <th>User Avartar</th>
+            <th>Full Name</th>
+            <th>DoB</th>
+            <th>Gender</th>
+            <th>Current Location</th>
+            </tr>
+            <tbody id="userTable"></tbody>
+                            
+            </table>
+ </section>
+
+ </body>
+
+ </html>
+ 

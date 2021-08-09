@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <title>Kafene</title>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./products.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+        <script src="./products.js"></script>
+      </head>
+    <body>
+        <header id="top-bar">
+            <div id="logo-wrapper">
+                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="kafenelogo"/>
+               <p class="brand-name">kafene</p>
+            </div>
+            <div id="menu-items">
+                <a href="./orders.html">Orders</a>
+                <a href="./products.html">Products</a>
+                <a href="./user.html">Users</a>
+             </div>
+             <a href="./login.html" id="logout-btn">Logout</a>
+ </header>
+
+ <main id="main-section">
+    <div id="main-content">
+        <h1 id="main-heading">Products</h1>
+        <div id="content">
+            <div id="content-left">
+                <h3 id="left-heading">Filters</h3>
+                <div id="left-content">
+                    <p>count:<span id="count"></span></p>
+                    <label id="left-label">
+                        <input type="checkbox" name="orders-new" id="expireDate" checked=true>Expired
+                    </label>
+                    <label id="left-label">
+                        <input type="checkbox" name="orders-packed" id="stock" checked=true>Low Stock
+                    </label>
+                </div>
+            </div>
+            <div id="content-right">
+                <table>
+                    <tr>
+                        <th>iD</th>
+                        <th>product name</th>
+                        <th>product brand</th>
+                        <th>expiry date</th>
+                        <th>unit<br> price</th>
+                        <th>stock</th>
+                    </tr>
+                    <tbody id="tableData"></tbody>
+                    <tbody name="table-exp" id="expire"></tbody>
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
